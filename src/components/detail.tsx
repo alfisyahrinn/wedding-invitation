@@ -136,11 +136,11 @@ export default function DetailSection() {
         </div>
         <div className="py-3   bg-[#8B7A4E]  flex-col flex w-full justify-center items-center text-center">
           <p className="text-[15px] max-w-[345px] font-cormorant text-white">
-            "Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan
+          &quot;Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan
             untukmu isteri-isteri dari jenismu sendiri, supaya kamu cenderung
             dan merasa tenteram kepada-Nya, dan dijadikan-Nya diantaramu rasa
             kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar
-            terdapat tanda-tanda bagi kaum yang berfikir."
+            terdapat tanda-tanda bagi kaum yang berfikir.&quot;
           </p>
           <p className="mt-2  text-[17px] max-w-[345px] font-dancing text-white">
             Q.S. Ar-Rum : 21
@@ -180,7 +180,6 @@ export default function DetailSection() {
               d="M0,192L80,160C160,128,320,64,480,64C640,64,800,128,960,138.7C1120,149,1280,107,1360,85.3L1440,64L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"
             ></path>
           </svg>
-          {/* <svg className=" -left-60 absolute -z-10 w-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="0.5" d="M0,192L80,160C160,128,320,64,480,64C640,64,800,128,960,138.7C1120,149,1280,107,1360,85.3L1440,64L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg> */}
           <svg
             className="-bottom-[74px] absolute -z-20 w-[499px]"
             xmlns="http://www.w3.org/2000/svg"
