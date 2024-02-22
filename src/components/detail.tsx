@@ -196,13 +196,13 @@ export default function DetailSection() {
             className="absolute -bottom-5 right-0 opacity-40 -z-50"
             src="assets/image/banner/opacity-kanan.png"
             alt="flower"
-            data-aos="fade-up-right"
+            data-aos="fade-up"
           />
           <img
             className="absolute -bottom-8 left-0 opacity-40 -z-50"
             src="assets/image/banner/opacity-kiri.png"
             alt="flower"
-            data-aos="fade-up-left"
+            data-aos="fade-up"
           />
         </div>
         <div
@@ -349,15 +349,13 @@ export default function DetailSection() {
             </Link>
           </div>
         </div>
-        <div className="w-full max-h-full">
-          <div className="relative mt-20">
-            <img
-              data-aos="fade"
-              className="h-60 absolute bottom-0 right-0 -z-10 "
-              src="assets/image/banner/banner-bottom.png"
-              alt="decoration"
-            />
-          </div>
+        <div className="relative mt-20">
+          <img
+            data-aos="fade"
+            className="h-60 absolute bottom-0 right-0 -z-10 "
+            src="assets/image/banner/banner-bottom.png"
+            alt="decoration"
+          />
         </div>
       </div>
       {/* End Tanggal */}
