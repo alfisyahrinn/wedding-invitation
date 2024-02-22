@@ -1,6 +1,17 @@
+"use client";
 import React from "react";
 
 export default function Splash() {
+  const handleClick = () =>{
+    if (typeof window !== 'undefined') {
+      window.onscroll = function () {};
+  
+      const rootElement: HTMLElement | null = document.querySelector(":root");
+      if (rootElement) {
+        rootElement.style.scrollBehavior = 'smooth';
+      }
+    }
+  }
   return (
     <div className="flex flex-col relative justify-center items-center h-[100vh] text-center gap-4 ">
       <img
@@ -9,7 +20,7 @@ export default function Splash() {
         alt="decoration"
       />
       <img
-        className="absolute bottom-0 right-0"
+        className="absolute bottom-0 right-0 -z-10"
         src="assets/image/banner/banner-bottom.png"
         alt="decoration"
       />
@@ -21,10 +32,10 @@ export default function Splash() {
       <p className="text-2xl text-secondary font-cormorant">
         Hafshah dan Meriam
       </p>
-      <button className="bg-primary px-[18px] py-[8px] flex gap-2 text-white font-cormorant text-2xl">
+      <a href="#detail" onClick={handleClick} className="bg-primary px-[18px] py-[8px] flex gap-2 text-white font-cormorant text-2xl">
         <img src="assets/image/icon/email.svg" alt="open" />
         Buka Undangan
-      </button>
+      </a>
     </div>
   );
 }

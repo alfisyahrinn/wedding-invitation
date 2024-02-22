@@ -1,7 +1,38 @@
+"use client";
+import Link from "next/link";
 import React from "react";
+import Countdown from "react-countdown";
 export default function DetailSection() {
+  const targetDate = new Date("2024-04-30");
+
+  const renderer = ({ days, hours, minutes, seconds, completed }: any) => {
+    if (completed) {
+      return <h1 className="font-cormorant text-primary text-4xl mt-4">Acara Sedang Di Mulai</h1>;
+    } else {
+      return (
+        <div className="flex justify-center gap-7">
+          <div>
+            <h1 className="text-[48px] text-primary font-cormorant">{days}</h1>
+            <p className="text-[18px] text-primary font-cormorant">Hari</p>
+          </div>
+          <div>
+            <h1 className="text-[48px] text-primary font-cormorant">{hours}</h1>
+            <p className="text-[18px] text-primary font-cormorant">Jam</p>
+          </div>
+          <div>
+            <h1 className="text-[48px] text-primary font-cormorant">{minutes}</h1>
+            <p className="text-[18px] text-primary font-cormorant">Menit</p>
+          </div>
+          <div>
+            <h1 className="text-[48px] text-primary font-cormorant">{seconds}</h1>
+            <p className="text-[18px] text-primary font-cormorant">Detik</p>
+          </div>
+        </div>
+      );
+    }
+  };
   return (
-    <div className="mb-20">
+    <div id="detail" className="mb-20">
       <div className="flex flex-col relative items-center  text-center">
         <img
           className="absolute top-0 left-0"
@@ -14,7 +45,7 @@ export default function DetailSection() {
           alt="decoration"
         />
         <p className="text-xl font-cormorant text-primary mt-[89px]">
-          <span className="text-secondary font-semibold">
+          <span className="text-secondary font-semibold max-w-[315px]">
             Assalamualaikum Wr. Wb.
           </span>{" "}
           <br />
@@ -134,9 +165,21 @@ export default function DetailSection() {
             ></path>
           </svg>
         </div>
+        <div className="relative">
+          <img
+            className="absolute bottom-0 right-0 opacity-40 -z-50"
+            src="assets/image/banner/opacity-kanan.png"
+            alt="flower"
+          />
+          <img
+            className="absolute bottom-0 left-0 opacity-40 -z-50"
+            src="assets/image/banner/opacity-kiri.png"
+            alt="flower"
+          />
+        </div>
         <div className="py-3   bg-[#8B7A4E]  flex-col flex w-full justify-center items-center text-center">
           <p className="text-[15px] max-w-[345px] font-cormorant text-white">
-          &quot;Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan
+            &quot;Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan
             untukmu isteri-isteri dari jenismu sendiri, supaya kamu cenderung
             dan merasa tenteram kepada-Nya, dan dijadikan-Nya diantaramu rasa
             kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar
@@ -145,6 +188,13 @@ export default function DetailSection() {
           <p className="mt-2  text-[17px] max-w-[345px] font-dancing text-white">
             Q.S. Ar-Rum : 21
           </p>
+        </div>
+        <div className="bg-red-500 relative">
+          <img
+            className="absolute -top-8 right-0  -z-50"
+            src="assets/image/banner/bawah.png"
+            alt="flower"
+          />
         </div>
         <div>
           <svg
@@ -192,6 +242,111 @@ export default function DetailSection() {
             ></path>
           </svg>
         </div>
+      </div>
+      <div className="mt-20 text-center">
+        <h1 className="text-[40px] font-dancing text-primary">Coutdown</h1>
+        {/* <div className="flex justify-center gap-7">
+          <div>
+            <h1 className="text-[48px] text-primary font-cormorant">100</h1>
+            <p className="text-[18px] text-primary font-cormorant">Hari</p>
+          </div>
+          <div>
+            <h1 className="text-[48px] text-primary font-cormorant">12 </h1>
+            <p className="text-[18px] text-primary font-cormorant">Jam</p>
+          </div>
+          <div>
+            <h1 className="text-[48px] text-primary font-cormorant">47</h1>
+            <p className="text-[18px] text-primary font-cormorant">Menit</p>
+          </div>
+          <div>
+            <h1 className="text-[48px] text-primary font-cormorant">11</h1>
+            <p className="text-[18px] text-primary font-cormorant">Detik</p>
+          </div>
+        </div> */}
+        <Countdown  date={targetDate} renderer={renderer}/>
+      </div>
+      <div className="mt-9 text-center">
+        <h1 className="text-[40px] font-dancing text-primary">Akad Nikah</h1>
+        <div className="flex justify-center mt-3 gap-10">
+          <div className="max-w-[83px]">
+            <img
+              className="m-auto"
+              src="./assets/image/icon/date.svg"
+              alt="date"
+            />
+            <p className="text-[16px] mt-2 font-cormorant text-primary">
+              Senin,29 April 2024
+            </p>
+          </div>
+          <div className="max-w-[83px]">
+            <img
+              className="m-auto"
+              src="./assets/image/icon/time.svg"
+              alt="time"
+            />
+            <p className="text-[16px] mt-2 font-cormorant text-primary">
+              09 : 00 wib, s.d. selesai
+            </p>
+          </div>
+        </div>
+        <p className="text-[16px] mt-2 font-cormorant text-primary">
+          KUA Kec. Lut Tawar
+        </p>
+        <div className="flex flex-col justify-center mt-2">
+          <Link
+            href="https://maps.app.goo.gl/xCUoeZaCRx2gxKSF7"
+            target="_blank"
+            className="bg-primary m-auto text-white px-[10px] py-[5px] font-cormorant text-[16px] flex justify-center gap-2"
+          >
+            <img src="./assets/image/icon/map.svg" alt="map" />
+            Google Maps
+          </Link>
+        </div>
+      </div>
+      <div className="mt-9 text-center">
+        <h1 className="text-[40px] font-dancing text-primary">Resepsi</h1>
+        <div className="flex justify-center mt-3 gap-10">
+          <div className="max-w-[83px]">
+            <img
+              className="m-auto"
+              src="./assets/image/icon/date.svg"
+              alt="date"
+            />
+            <p className="text-[16px] mt-2 font-cormorant text-primary">
+              Selasa,30 April 2024
+            </p>
+          </div>
+          <div className="max-w-[83px]">
+            <img
+              className="m-auto"
+              src="./assets/image/icon/time.svg"
+              alt="time"
+            />
+            <p className="text-[16px] mt-2 font-cormorant text-primary">
+              10 : 00 wib, s.d. selesai
+            </p>
+          </div>
+        </div>
+        <p className="text-[16px] mt-2 font-cormorant text-primary">
+          Jln. Al-Fitrah, No. 128 Takengon
+        </p>
+        <div className="flex flex-col justify-center mt-2">
+          <Link
+            href="https://maps.app.goo.gl/9GTTGf9m7z73Ba5C9"
+            target="_blank"
+            className="bg-primary m-auto text-white px-[10px] py-[5px] font-cormorant text-[16px] flex justify-center gap-2"
+          >
+            <img src="./assets/image/icon/map.svg" alt="map" />
+            Google Maps
+          </Link>
+        </div>
+      </div>
+      <div className="relative mt-20">
+        <img
+          className="h-60 absolute bottom-0 right-0 -z-10 "
+          src="assets/image/banner/banner-bottom.png"
+          alt="decoration"
+        />
       </div>
     </div>
   );
