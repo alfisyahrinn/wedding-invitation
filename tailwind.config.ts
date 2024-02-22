@@ -19,6 +19,8 @@ const config: Config = {
       felipa: ["Felipa", "serif"],
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-animated')
+  ],
 };
 export default config;

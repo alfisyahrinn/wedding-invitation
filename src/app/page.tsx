@@ -1,9 +1,12 @@
 "use client";
-import DetailSection from "@/components/detail";
 import Splash from "@/components/splash";
-import Countdown from "react-countdown";
+import Aos from "aos";
+import dynamic from "next/dynamic";
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 export default function Home() {
+  Aos.init()
   function disableScroll() {
     if (typeof window !== "undefined") {
       window.onscroll = function () {
@@ -22,10 +25,15 @@ export default function Home() {
 
   disableScroll();
 
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+  },[])
+
+  const NoSSR = dynamic(() => import('@/components/detail'), { ssr: false })
   return (
     <div className="scroll-smooth">
       <Splash />
-      <DetailSection />
+      <NoSSR />
     </div>
   );
 }
