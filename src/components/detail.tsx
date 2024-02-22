@@ -40,7 +40,7 @@ export default function DetailSection() {
     }
   };
   return (
-    <div id="detail" className="mb-20">
+    <div id="detail">
       {/* Home */}
       <div className="flex flex-col relative items-center  text-center">
         <img

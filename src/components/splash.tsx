@@ -1,15 +1,15 @@
-"use client";
+'use client'
 import React, { useState, useRef, useEffect } from "react";
 import { FaPlayCircle } from "react-icons/fa";
 import { FaCirclePause } from "react-icons/fa6";
+
 export default function Splash() {
   const [musik, setMusik] = useState(true);
+  const [tamu, setTamu] = useState<any>(""); // State untuk menyimpan nama tamu
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
   const handleClick = () => {
     handleMusik();
-    // setMusik(true);
-
     console.log({ musik });
 
     if (typeof window !== "undefined") {
@@ -43,15 +43,13 @@ export default function Splash() {
     }
   };
 
-  useEffect(()=>{
+  useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
-    const nameLU = urlParams.get('name');
-    console.log(name);
-  },[])
-  const urlParams = new URLSearchParams(window.location.search);
-  const tamu = urlParams.get('name');
+    const tamu = urlParams.get("name");
+    setTamu(tamu); // Menyimpan nilai nama tamu ke dalam state
+  }, []);
+
   return (
-    
     <>
       <div className="flex flex-col relative justify-center items-center h-[100vh] text-center gap-4 ">
         <img
@@ -73,9 +71,8 @@ export default function Splash() {
         <p className="text-2xl font-medium text-secondary font-cormorant animate-fade animate-once animate-duration-1000 animate-delay-300">
           Kepada Bpk/Ibu/Saudara/i:
         </p>
-        {/* {nameLU === null ?} */}
         <p className="text-2xl text-secondary font-cormorant animate-fade animate-once animate-duration-1000 animate-delay-400">
-          {tamu}
+          {tamu} {/* Menampilkan nama tamu */}
         </p>
         <button
           onClick={handleClick}
