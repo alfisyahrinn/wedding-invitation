@@ -41,6 +41,7 @@ export default function DetailSection() {
   };
   return (
     <div id="detail" className="mb-20">
+      {/* Home */}
       <div className="flex flex-col relative items-center  text-center">
         <img
           className="absolute top-0 left-0 animate-fade-right animate-duration-1000 animate-delay-50"
@@ -92,6 +93,9 @@ export default function DetailSection() {
           <img src="assets/image/banner/accent.png" alt="accent" />
         </div>
       </div>
+      {/* End Home */}
+
+      {/* Informasi */}
       <div className="mt-11 text-center">
         <p
           data-aos="fade-up"
@@ -102,13 +106,13 @@ export default function DetailSection() {
         <div className="flex justify-around mt-7">
           <p
             className="text-[15px] max-w-[159px] font-cormorant text-primary text-left"
-            data-aos="fade-up-right"
+            data-aos="fade-up"
           >
             Kel. Bpk. Drs. M. Umar Ar (Alm) & Ibu Asnaini
           </p>
           <p
             className="text-[15px]  max-w-[107px] font-cormorant text-primary text-right"
-            data-aos="fade-up-left"
+            data-aos="fade-up"
           >
             Kel. Bpk. Ifnel & Ibu Irdawati
           </p>
@@ -137,6 +141,9 @@ export default function DetailSection() {
           </li>
         </ul>
       </div>
+      {/* End Informasi */}
+
+      {/* Hadist */}
       <div className="mt-24 relative">
         <div data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
           <svg
@@ -146,7 +153,7 @@ export default function DetailSection() {
           >
             <path
               fill="#8B7A4E"
-              fill-opacity="1"
+              fillOpacity="1"
               d="M0,192L80,160C160,128,320,64,480,64C640,64,800,128,960,138.7C1120,149,1280,107,1360,85.3L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
             ></path>
           </svg>
@@ -157,7 +164,7 @@ export default function DetailSection() {
           >
             <path
               fill="#8B7A4E"
-              fill-opacity="0.5"
+              fillOpacity="0.5"
               d="M0,192L80,160C160,128,320,64,480,64C640,64,800,128,960,138.7C1120,149,1280,107,1360,85.3L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
             ></path>
           </svg>
@@ -168,7 +175,7 @@ export default function DetailSection() {
           >
             <path
               fill="#8B7A4E"
-              fill-opacity="0.6"
+              fillOpacity="0.6"
               d="M0,192L80,160C160,128,320,64,480,64C640,64,800,128,960,138.7C1120,149,1280,107,1360,85.3L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
             ></path>
           </svg>
@@ -179,31 +186,20 @@ export default function DetailSection() {
           >
             <path
               fill="#8B7A4E"
-              fill-opacity="0.6"
-              d="M0,192L80,160C160,128,320,64,480,64C640,64,800,128,960,138.7C1120,149,1280,107,1360,85.3L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
-            ></path>
-          </svg>
-          <svg
-            className="-top-[66px] -left-28 -z-10 absolute"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1440 320"
-          >
-            <path
-              fill="#8B7A4E"
-              fill-opacity="0.6"
+              fillOpacity="0.6"
               d="M0,192L80,160C160,128,320,64,480,64C640,64,800,128,960,138.7C1120,149,1280,107,1360,85.3L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
             ></path>
           </svg>
         </div>
         <div className="relative">
           <img
-            className="absolute bottom-0 right-0 opacity-40 -z-50"
+            className="absolute -bottom-5 right-0 opacity-40 -z-50"
             src="assets/image/banner/opacity-kanan.png"
             alt="flower"
             data-aos="fade-up-right"
           />
           <img
-            className="absolute bottom-0 left-0 opacity-40 -z-50"
+            className="absolute -bottom-8 left-0 opacity-40 -z-50"
             src="assets/image/banner/opacity-kiri.png"
             alt="flower"
             data-aos="fade-up-left"
@@ -227,7 +223,7 @@ export default function DetailSection() {
         </div>
         <div className="bg-red-500 relative">
           <img
-            data-aos="fade-up-left"
+            data-aos="fade-up"
             className="absolute -top-8 right-0  -z-50"
             src="assets/image/banner/bawah.png"
             alt="flower"
@@ -241,7 +237,7 @@ export default function DetailSection() {
           >
             <path
               fill="#8B7A4E"
-              fill-opacity="1"
+              fillOpacity="1"
               d="M0,192L80,160C160,128,320,64,480,64C640,64,800,128,960,138.7C1120,149,1280,107,1360,85.3L1440,64L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"
             ></path>
           </svg>
@@ -252,7 +248,7 @@ export default function DetailSection() {
           >
             <path
               fill="#8B7A4E"
-              fill-opacity="0.5"
+              fillOpacity="0.5"
               d="M0,192L80,160C160,128,320,64,480,64C640,64,800,128,960,138.7C1120,149,1280,107,1360,85.3L1440,64L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"
             ></path>
           </svg>
@@ -263,100 +259,108 @@ export default function DetailSection() {
           >
             <path
               fill="#8B7A4E"
-              fill-opacity="0.5"
+              fillOpacity="0.5"
               d="M0,192L80,160C160,128,320,64,480,64C640,64,800,128,960,138.7C1120,149,1280,107,1360,85.3L1440,64L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"
             ></path>
           </svg>
         </div>
       </div>
-      <div className="mt-20 text-center" data-aos="fade-up">
-        <h1 className="text-[40px] font-dancing text-primary">Coutdown</h1>
-        <Countdown date={targetDate} renderer={renderer} />
-      </div>
-      <div className="mt-9 text-center" data-aos="fade-up">
-        <h1 className="text-[40px] font-dancing text-primary">Akad Nikah</h1>
-        <div className="flex justify-center mt-3 gap-10">
-          <div className="max-w-[83px]">
-            <img
-              className="m-auto"
-              src="./assets/image/icon/date.svg"
-              alt="date"
-            />
-            <p className="text-[16px] mt-2 font-cormorant text-primary">
-              Senin,29 April 2024
-            </p>
-          </div>
-          <div className="max-w-[83px]">
-            <img
-              className="m-auto"
-              src="./assets/image/icon/time.svg"
-              alt="time"
-            />
-            <p className="text-[16px] mt-2 font-cormorant text-primary">
-              09 : 00 wib, s.d. selesai
-            </p>
-          </div>
+      {/* End Hadist */}
+
+      {/* Tanggal */}
+      <div>
+        <div className="mt-20 text-center" data-aos="fade-up">
+          <h1 className="text-[40px] font-dancing text-primary">Coutdown</h1>
+          <Countdown date={targetDate} renderer={renderer} />
         </div>
-        <p className="text-[16px] mt-2 font-cormorant text-primary">
-          KUA Kec. Lut Tawar
-        </p>
-        <div className="flex flex-col justify-center mt-2">
-          <Link
-            href="https://maps.app.goo.gl/xCUoeZaCRx2gxKSF7"
-            target="_blank"
-            className="bg-primary m-auto text-white px-[10px] py-[5px] font-cormorant text-[16px] flex justify-center gap-2"
-          >
-            <img src="./assets/image/icon/map.svg" alt="map" />
-            Google Maps
-          </Link>
-        </div>
-      </div>
-      <div className="mt-9 text-center" data-aos="fade-up">
-        <h1 className="text-[40px] font-dancing text-primary">Resepsi</h1>
-        <div className="flex justify-center mt-3 gap-10">
-          <div className="max-w-[83px]">
-            <img
-              className="m-auto"
-              src="./assets/image/icon/date.svg"
-              alt="date"
-            />
-            <p className="text-[16px] mt-2 font-cormorant text-primary">
-              Selasa,30 April 2024
-            </p>
+        <div className="mt-9 text-center" data-aos="fade-up">
+          <h1 className="text-[40px] font-dancing text-primary">Akad Nikah</h1>
+          <div className="flex justify-center mt-3 gap-10">
+            <div className="max-w-[83px]">
+              <img
+                className="m-auto"
+                src="./assets/image/icon/date.svg"
+                alt="date"
+              />
+              <p className="text-[16px] mt-2 font-cormorant text-primary">
+                Senin,29 April 2024
+              </p>
+            </div>
+            <div className="max-w-[83px]">
+              <img
+                className="m-auto"
+                src="./assets/image/icon/time.svg"
+                alt="time"
+              />
+              <p className="text-[16px] mt-2 font-cormorant text-primary">
+                09 : 00 wib, s.d. selesai
+              </p>
+            </div>
           </div>
-          <div className="max-w-[83px]">
-            <img
-              className="m-auto"
-              src="./assets/image/icon/time.svg"
-              alt="time"
-            />
-            <p className="text-[16px] mt-2 font-cormorant text-primary">
-              10 : 00 wib, s.d. selesai
-            </p>
+          <p className="text-[16px] mt-2 font-cormorant text-primary">
+            KUA Kec. Lut Tawar
+          </p>
+          <div className="flex flex-col justify-center mt-2">
+            <Link
+              href="https://maps.app.goo.gl/xCUoeZaCRx2gxKSF7"
+              target="_blank"
+              className="bg-primary m-auto text-white px-[10px] py-[5px] font-cormorant text-[16px] flex justify-center gap-2"
+            >
+              <img src="./assets/image/icon/map.svg" alt="map" />
+              Google Maps
+            </Link>
           </div>
         </div>
-        <p className="text-[16px] mt-2 font-cormorant text-primary">
-          Jln. Al-Fitrah, No. 128 Takengon
-        </p>
-        <div className="flex flex-col justify-center mt-2">
-          <Link
-            href="https://maps.app.goo.gl/9GTTGf9m7z73Ba5C9"
-            target="_blank"
-            className="bg-primary m-auto text-white px-[10px] py-[5px] font-cormorant text-[16px] flex justify-center gap-2"
-          >
-            <img src="./assets/image/icon/map.svg" alt="map" />
-            Google Maps
-          </Link>
+        <div className="mt-9 text-center" data-aos="fade-up">
+          <h1 className="text-[40px] font-dancing text-primary">Resepsi</h1>
+          <div className="flex justify-center mt-3 gap-10">
+            <div className="max-w-[83px]">
+              <img
+                className="m-auto"
+                src="./assets/image/icon/date.svg"
+                alt="date"
+              />
+              <p className="text-[16px] mt-2 font-cormorant text-primary">
+                Selasa,30 April 2024
+              </p>
+            </div>
+            <div className="max-w-[83px]">
+              <img
+                className="m-auto"
+                src="./assets/image/icon/time.svg"
+                alt="time"
+              />
+              <p className="text-[16px] mt-2 font-cormorant text-primary">
+                10 : 00 wib, s.d. selesai
+              </p>
+            </div>
+          </div>
+          <p className="text-[16px] mt-2 font-cormorant text-primary">
+            Jln. Al-Fitrah, No. 128 Takengon
+          </p>
+          <div className="flex flex-col justify-center mt-2">
+            <Link
+              href="https://maps.app.goo.gl/9GTTGf9m7z73Ba5C9"
+              target="_blank"
+              className="bg-primary m-auto text-white px-[10px] py-[5px] font-cormorant text-[16px] flex justify-center gap-2"
+            >
+              <img src="./assets/image/icon/map.svg" alt="map" />
+              Google Maps
+            </Link>
+          </div>
+        </div>
+        <div className="w-full max-h-full">
+          <div className="relative mt-20">
+            <img
+              data-aos="fade"
+              className="h-60 absolute bottom-0 right-0 -z-10 "
+              src="assets/image/banner/banner-bottom.png"
+              alt="decoration"
+            />
+          </div>
         </div>
       </div>
-      <div className="relative mt-20">
-        <img
-          data-aos="fade-up-left"
-          className="h-60 absolute bottom-0 right-0 -z-10 "
-          src="assets/image/banner/banner-bottom.png"
-          alt="decoration"
-        />
-      </div>
+      {/* End Tanggal */}
     </div>
   );
 }

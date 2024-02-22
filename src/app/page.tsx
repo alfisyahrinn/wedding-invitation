@@ -29,7 +29,7 @@ export default function Home() {
 
   const NoSSR = dynamic(() => import('@/components/detail'), { ssr: false })
   return (
-    <div className="scroll-smooth">
+    <div className="scroll-smooth flex justify-center flex-col w-[390px] m-auto">
       <Splash />
       {/* <DetailSection/> */}
       <NoSSR />

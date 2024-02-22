@@ -10,7 +10,7 @@ export default function Splash() {
       if (rootElement) {
         rootElement.style.scrollBehavior = "smooth";
         rootElement.style.overflowX = 'hidden'
-        rootElement.style.overflowY = 'auto'
+        rootElement.style.overflow = 'auto'
       }
       const detailSection = document.getElementById("detail");
       if (detailSection) {
@@ -21,12 +21,12 @@ export default function Splash() {
   return (
     <div className="flex flex-col relative justify-center items-center h-[100vh] text-center gap-4 ">
       <img
-        className="absolute top-0 left-0  animate-fade-right animate-duration-1000 animate-delay-50"
+        className="absolute top-0 left-0  animate-fade animate-duration-1000 animate-delay-50"
         src="assets/image/banner/banner-top.png"
         alt="decoration"
       />
       <img
-        className="absolute bottom-0 right-0 -z-10  animate-fade-left animate-duration-1000 animate-delay-50"
+        className="absolute bottom-0 right-0 -z-10  animate-fade animate-duration-1000 animate-delay-50"
         src="assets/image/banner/banner-bottom.png"
         alt="decoration"
       />
