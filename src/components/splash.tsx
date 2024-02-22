@@ -9,7 +9,8 @@ export default function Splash() {
       const rootElement: HTMLElement | null = document.querySelector(":root");
       if (rootElement) {
         rootElement.style.scrollBehavior = "smooth";
-        rootElement.style.overflow = 'auto'
+        rootElement.style.overflowX = 'hidden'
+        rootElement.style.overflowY = 'auto'
       }
       const detailSection = document.getElementById("detail");
       if (detailSection) {
