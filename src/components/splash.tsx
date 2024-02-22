@@ -1,13 +1,14 @@
 "use client";
 import React, { useState, useRef } from "react";
+import { FaPlayCircle } from "react-icons/fa";
 import { FaCirclePause } from "react-icons/fa6";
 
 export default function Splash() {
-  const [musik, setMusik] = useState(false);
+  const [musik, setMusik] = useState(true);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
   const handleClick = () => {
-    handleMusik()
+    handleMusik();
     // setMusik(true);
 
     console.log({ musik });
@@ -24,6 +25,10 @@ export default function Splash() {
       const detailSection = document.getElementById("detail");
       if (detailSection) {
         detailSection.scrollIntoView({ behavior: "smooth" });
+      }
+      const MusicJalan = document.getElementById("music");
+      if (MusicJalan) {
+        MusicJalan.style.display = "block";
       }
     }
   };
@@ -77,8 +82,16 @@ export default function Splash() {
           </audio>
         )}
       </div>
-      <div className="absolute bottom-0 right-0 pb-6 pe-6">
-        <FaCirclePause onClick={handleMusik} className="h-9 w-9 text-primary" />
+      <div
+        id="music"
+        className={`fixed bottom-0 right-0 pb-6 pe-6 hidden`}
+        onClick={handleMusik}
+      >
+        {!musik ? (
+          <FaCirclePause className="h-9 w-9 text-primary" />
+        ) : (
+          <FaPlayCircle className="h-9 w-9 text-primary" />
+        )}
       </div>
     </>
   );
