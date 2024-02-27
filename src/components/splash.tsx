@@ -81,13 +81,13 @@ export default function Splash() {
           <img src="assets/image/icon/email.svg" alt="open" />
           Buka Undangan
         </button>
-        {!musik && (
+        {/* {!musik && (
           <audio ref={audioRef} autoPlay loop>
             <source src="./assets/musik-arab.mp3" type="audio/mp3" />
           </audio>
-        )}
+        )} */}
       </div>
-      <div
+      {/* <div
         id="music"
         className={`fixed bottom-0 right-0 pb-6 pe-6 hidden`}
         onClick={handleMusik}
@@ -97,7 +97,7 @@ export default function Splash() {
         ) : (
           <FaPlayCircle className="h-9 w-9 text-primary" />
         )}
-      </div>
+      </div> */}
     </>
   );
 }
