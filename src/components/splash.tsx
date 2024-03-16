@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React, { useState, useRef, useEffect } from "react";
 import { FaPlayCircle } from "react-icons/fa";
 import { FaCirclePause } from "react-icons/fa6";
@@ -63,7 +63,7 @@ export default function Splash() {
           alt="decoration"
         />
         <p className="text-2xl font-dancing text-secondary animate-fade animate-once animate-duration-1000 animate-delay-100">
-          The Wedding of
+          Walimatul &apos;Ursy
         </p>
         <h1 className="text-8xl font-dancing text-primary animate-fade animate-once animate-duration-1000 animate-delay-200">
           Arief & Mia
